@@ -42,8 +42,6 @@ Das Ergebnis: eine sauber orchestrierte, praxisnahe Infrastruktur, die meine Fä
 ![Image](https://github.com/user-attachments/assets/e7b71f88-4fc0-466b-9e21-f03a0bfea916)
 
 
-PowerShell Skript: 
-
 
 
 
