@@ -111,7 +111,7 @@ Die Installation läuft automatisch und kann einige Minuten dauern. Nach dem Neu
 
 Für ein verbessertes Benutzererlebnis binden wir in VirtualBox über Geräte → Gasterweiterungen einlegen… die Guest Additions ein. In der VM öffnen wir den Windows‑Explorer, navigieren zu Dieser PC → VirtualBox Guest Additions, starten VBoxWindowsAdditions‑amd64.exe, folgen dem Assistenten und führen nach Abschluss einen Neustart durch.
 
-https://github.com/user-attachments/assets/a5262cab-623c-4e5a-9b09-95a93197e280
+https://github.com/user-attachments/assets/d868e394-f1a0-4f6b-a87a-5a3798baf7a7
 
  ### 2. Netzwerkkonfiguration (Internet & internes LAN)
 _In diesem Schritt richten wir die IP-Adressierung für unseren Server ein. Das System verfügt über zwei Netzwerkkarten:_
@@ -158,9 +158,7 @@ _Hinweis: Der Adapter „Internet“ erhält in der Regel automatisch per DHCP e
 
 _Nach dem Neustart ist der Server für die spätere AD-DS-Rolle vorbereitet (interne, statische IP + eigener DNS-Eintrag)._
 
-https://github.com/user-attachments/assets/a849311b-a363-4e8e-a27d-c5b59f247a13
-
-
+https://github.com/user-attachments/assets/fbd550bc-d86a-4e3c-adcb-d9c7f5a39f06
 
 ### 3. Active Directory-Domänendienste (AD DS) installieren
 
@@ -213,7 +211,7 @@ Bevor Sie beginnen → Weiter
 
 _Der Server wird nach der Hochstufung **automatisch neu gestartet**. Danach steht die neue Domäne bereit und der Server fungiert als **Domänencontroller** (inkl. DNS)._
 
-https://github.com/user-attachments/assets/e95bb618-4cc2-4637-bd19-9ee5fd1bdf51
+https://github.com/user-attachments/assets/029182dd-351c-4f09-8021-56da0ab1d8df
 
 ### 4. Domänen-Admin Konto anlegen und anmelden
 _Ziel: Nach der AD-DS-Installation mit DOMAIN\Administrator anmelden, ein eigenes Domänen-Admin Konto erstellen, es der Gruppe Domänen-Admins zuweisen und sich damit anmelden._
@@ -278,8 +276,8 @@ _Namenskonvention: Häufig: a-<Erstinitial><Nachname> (z. B. a-kmustermann) als 
 
 - Kennwort eingeben → Anmelden.
 
-https://github.com/user-attachments/assets/e429c539-4f5e-4176-8097-96a9d96295c0
- 
+https://github.com/user-attachments/assets/4d333d8d-a4e7-493b-8dd8-10ad8c01b904
+
 
 ### 5. RRAS/NAT einrichten (Remotezugriff + NAT) für Internetzugang im Lab
 
@@ -306,8 +304,7 @@ _Ziel: Der Domänencontroller fungiert als NAT-Gateway, damit Clients im interne
 
 - [ ] Nach Abschluss Schließen.
 
-https://github.com/user-attachments/assets/dd5d9607-2c7f-4a56-96c4-f0f109524206
-
+https://github.com/user-attachments/assets/e270453a-c03f-4ccc-a0d0-e5f101795e1f
 
 ### 6. RRAS/NAT konfigurieren (Routing und RAS)
 
@@ -367,8 +364,7 @@ Das bedeutet:
 
 - Interne Clients können über das Standardgateway `172.16.0.1` ins Internet, obwohl sie selbst nur im privaten Adressraum (z. B. `172.16.0.x/24`) sind.
 
-https://github.com/user-attachments/assets/686456b3-3da3-4fd8-a5d8-b90fc3ca2eff
-
+https://github.com/user-attachments/assets/955350b2-e70e-414f-b23c-c512c340ecbd
 
 ### 7. DHCP-Server auf dem Domänencontroller einrichten
 
@@ -388,8 +384,7 @@ _Ziel: Windows-10/11-Clients im privaten Lab-Netz automatisch mit IP-Adressen ve
 
 - [ ] Nach Abschluss Schließen.
 
-https://github.com/user-attachments/assets/6144f274-050b-4b3c-948c-f6b9f2321109
-
+https://github.com/user-attachments/assets/8bdbdc9f-c484-4ee1-bb82-b3d9c5d20541
 
 ### 8. DHCP-Scope anlegen und DHCP-Server autorisieren
 
@@ -429,8 +424,7 @@ _Falls der Server rot/„inaktiv“ angezeigt wird, wird die Autorisierung spät
 - [ ] Kurz warten, dann Aktualisieren.
 - IPv4 sollte grün sein, der Scope sichtbar/aktiv.
 
-https://github.com/user-attachments/assets/28b07ba5-f0ff-48af-9093-244d8dbd8fc1
-
+https://github.com/user-attachments/assets/2173944d-eeb4-491e-8f57-0c9d353450c0
 
 ### 9. AD-Benutzer massenhaft per PowerShell anlegen (aus Textdatei)
 
@@ -444,15 +438,13 @@ Zur Überprüfung, ob die Konten erstellt wurden: Windows-Startfläche → Windo
 
 Um ein bestimmtes Konto zu suchen: In ADUC auf mydomain.com rechtsklicken → Suchen… → Name eingeben → Jetzt suchen. Das entsprechende Konto wird angezeigt.
 
-https://github.com/user-attachments/assets/f3a8d1f9-ab86-45de-b99f-bb2f252a3f60
-
+https://github.com/user-attachments/assets/d5b942a2-c6cf-42e0-ab4d-6e0d6b6c9406
 
 ### 10. Windows 11 Enterprise-Client als virtuelle Maschine einrichten
 
 _Im nächsten Schritt erstellen wir unseren Windows-11-Enterprise-Client als virtuelle Maschine und orientieren uns dabei an der Vorgehensweise, die wir bereits für den Domänencontroller verwendet haben._
 
-https://github.com/user-attachments/assets/4d69253c-9816-4aff-90d3-b920c55b1e40
-
+https://github.com/user-attachments/assets/d8f6fffc-6838-4d5f-b901-1a2e0679d738
 
 ### 11. Windows-Client prüfen, umbenennen und der Domäne beitreten
 
@@ -486,8 +478,7 @@ https://github.com/user-attachments/assets/4d69253c-9816-4aff-90d3-b920c55b1e40
 - [ ] CMD öffnen und testen: ping mydomain.com
 - [ ] Zweck: Prüft DNS-Auflösung der Domäne sowie Netzwerk-Erreichbarkeit des Domänencontrollers.
 
-https://github.com/user-attachments/assets/77d59c46-6956-476e-b4d8-59ca3b0a7680
-
+https://github.com/user-attachments/assets/179a8e9c-1f3e-40ff-9003-53725f56d982
 
 ### 12. DHCP-Lease prüfen und Domain-Mitgliedschaft verifizieren
 
@@ -511,4 +502,5 @@ _Damit ist bestätigt, dass der Client beim DHCP-Server automatisch eine Adresse
 - [ ] In ADUC zur gewünschten OU (z. B. Users, Admins o. Ä.) navigieren.
 - [ ] Die mit dem PowerShell-Skript erstellten Benutzerkonten sind hier gelistet.
 
-https://github.com/user-attachments/assets/3cd8f1f6-97dc-4321-8980-243c73a9131d
+
+https://github.com/user-attachments/assets/6aa5ac0f-7f31-4d12-8128-80cc5e15c650
