@@ -31,18 +31,17 @@ Das Ergebnis: eine sauber orchestrierte, praxisnahe Infrastruktur, die meine Fä
 
 - Oracle Virtual Box: [Downloads – Oracle VirtualBox](https://www.virtualbox.org/wiki/Downloads)
 
-![Image](https://github.com/user-attachments/assets/2bb8d257-bd0d-46d9-bb68-3079eb42915b)
+![vbox](https://github.com/user-attachments/assets/8bb91b13-40c3-44e0-9d3a-1311d7e17b5b)
+
 
 - Windows Server 2022: [Windows Server 2022 | Microsoft Evaluation Center](https://www.microsoft.com/de-de/evalcenter/download-windows-server-2022)
 
-![Image](https://github.com/user-attachments/assets/2d339092-157a-4347-8a0e-10a63398a865)
+![Server 2022](https://github.com/user-attachments/assets/f69fefb7-33d7-44ea-9e73-a1b0f2c0c092)
 
 
 - Windows 11 Enterprise: [Windows 11 Enterprise | Microsoft Evaluation Center](https://www.microsoft.com/de-de/evalcenter/download-windows-11-enterprise)
 
-![Image](https://github.com/user-attachments/assets/e7b71f88-4fc0-466b-9e21-f03a0bfea916)
-
-
+![win](https://github.com/user-attachments/assets/0b2e3cdb-f265-49b7-b647-cca182029bcd)
 
 
 
@@ -102,7 +101,7 @@ __Für_ die Funktion als Domain Controller ist eine spezielle Netzwerkkonfigurat
 
 Die virtuelle Maschine ist nun korrekt konfiguriert und kann gestartet werden, um mit der Installation des Windows Server-Betriebssystems zu beginnen.
 
-https://github.com/user-attachments/assets/11ae303d-129b-45ac-a1c3-4598e1cf06e7
+https://github.com/user-attachments/assets/330a3eda-218d-4b05-bddf-2afd4afb8cf6
 
 ### 1.5 Installationsschritte – Windows Server 2022
 
