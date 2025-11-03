@@ -1,7 +1,8 @@
 # Windows Server AD Home Lab: Setup & Benutzerautomatisierung mit PowerShell
 
+<img width="595" height="525" alt="Diagramm" src="https://github.com/user-attachments/assets/23d71936-8384-4a45-9c75-9fa28fd50e52" />
 
-<img width="595" height="525" alt="Image" src="https://github.com/user-attachments/assets/9ffd007c-74ea-4b10-8437-f37749cf0992" />
+
 
 
 ### Beschreibung 
